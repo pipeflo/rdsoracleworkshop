@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup on Taller RDS for Oracle</title>
+    <link>/es/setup.html</link>
+    <description>Recent content in Setup on Taller RDS for Oracle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 12 May 2020 14:36:53 -0500</lastBuildDate>
+    
+	<atom:link href="/es/setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

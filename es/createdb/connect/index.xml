@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Connect on Taller RDS for Oracle</title>
+    <link>/es/createdb/connect.html</link>
+    <description>Recent content in Connect on Taller RDS for Oracle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 12 May 2020 21:15:07 -0500</lastBuildDate>
+    
+	<atom:link href="/es/createdb/connect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

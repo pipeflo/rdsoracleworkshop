@@ -1,0 +1,52 @@
+[
+	{	"pageTitle": "Index",
+		"relativePagePath": "/es/"
+	},
+	{
+		"pageTitle": "Introducción",
+		"relativePagePath": "/es/intro.html"
+	},
+	{
+		"pageTitle": "Computo de base de datos",
+		"relativePagePath": "/es/intro/database-compute.html"
+	},
+	{
+		"pageTitle": "Almacenamiento de Base de Datos",
+		"relativePagePath": "/es/intro/storage.html"
+	},
+	{
+		"pageTitle": "Licensing",
+		"relativePagePath": "/es/intro/licensing.html"
+	},
+	{
+		"pageTitle": "Setup",
+		"relativePagePath": "/es/setup.html"
+	},
+	{
+		"pageTitle": "...en un evento guiado por AWS",
+		"relativePagePath": "/es/setup/event.html"
+	},
+	{
+		"pageTitle": "Event Engine",
+		"relativePagePath": "/es/setup/event/login.html"
+	},
+	{
+		"pageTitle": "...ejecutanto el taller por mi cuenta",
+		"relativePagePath": "/es/setup/own.html"
+	},
+	{
+		"pageTitle": "Crear una cuenta de AWS",
+		"relativePagePath": "/es/setup/own/create.html"
+	},
+	{
+		"pageTitle": "Crear una Instancia RDS",
+		"relativePagePath": "/es/createdb.html"
+	},
+	{
+		"pageTitle": "Creando una Instancia de RDS Oracle",
+		"relativePagePath": "/es/createdb/deploy.html"
+	},
+	{
+		"pageTitle": "Connect",
+		"relativePagePath": "/es/createdb/connect.html"
+	}]

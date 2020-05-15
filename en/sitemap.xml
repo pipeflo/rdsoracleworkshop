@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/en/</loc>
+    <lastmod>2020-05-12T21:15:12-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/createdb/deploy.html</loc>
+    <lastmod>2020-05-12T21:14:53-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/createdb/deploy.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/createdb/deploy.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/setup/event.html</loc>
+    <lastmod>2020-05-12T14:35:30-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/setup/event.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/setup/event.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/intro/database-compute.html</loc>
+    <lastmod>2020-05-08T10:00:23-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/intro/database-compute.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/intro/database-compute.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/intro.html</loc>
+    <lastmod>2020-05-08T09:59:55-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/intro.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/intro.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/setup.html</loc>
+    <lastmod>2020-05-12T14:36:50-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/setup.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/setup.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/intro/storage.html</loc>
+    <lastmod>2020-05-08T10:00:24-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/intro/storage.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/intro/storage.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/createdb.html</loc>
+    <lastmod>2020-05-12T21:12:44-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/createdb.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/createdb.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/intro/licensing.html</loc>
+    <lastmod>2020-05-12T13:58:33-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/intro/licensing.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/intro/licensing.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/createdb/connect.html</loc>
+    <lastmod>2020-05-12T21:15:12-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/createdb/connect.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/createdb/connect.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/setup/own/create.html</loc>
+    <lastmod>2020-05-12T20:23:30-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/setup/own/create.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/setup/own/create.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/setup/event/login.html</loc>
+    <lastmod>2020-05-12T19:35:03-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/setup/event/login.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/setup/event/login.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/setup/own.html</loc>
+    <lastmod>2020-05-12T14:35:44-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/setup/own.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/setup/own.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/basics.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/basics/requirements.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/basics/installation.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/basics/configuration.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/cont.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/cont/pages.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/cont/archetypes.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/cont/markdown.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/cont/icons.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/cont/i18n.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/attachments.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/button.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/expand.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/img.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/notice.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/siteparam.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/siteurl.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/launch.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/launch/metadata.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/categories.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/categories.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-1.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-1/children-1-1.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-2.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-3.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/test.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/shortcodes/children/children-2/test3.html</loc>
+  </url>
+  
+  <url>
+    <loc>/en/tags.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/tags.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags.html"
+                />
+  </url>
+  
+</urlset>

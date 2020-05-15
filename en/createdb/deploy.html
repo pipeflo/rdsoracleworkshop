@@ -400,13 +400,13 @@
  
   
     
-    <li data-nav-id="/en/createdb/connect.html" title="Connect" class="dd-item 
+    <li data-nav-id="/en/createdb/connect.html" title="Connect to your Oracle Database" class="dd-item 
         
         
         
         ">
       <a href="../../en/createdb/connect.html">
-          Connect
+          Connect to your Oracle Database
           
       </a>
       
@@ -1153,24 +1153,51 @@
 </li>
 <li>
 <p>In the <strong>Create Database</strong> screen select the following options:</p>
-<ul>
-<li>Database Creation Method select <strong>Standard Create</strong>
-<img src="../../images/createdb/creation-method.png?width=200pc" alt="method"></li>
-<li>Engine Options click <strong>Oracle</strong> and then select <strong>Oracle 19.0.0.0.ru-2019.rur-2019-07.r1</strong>.
-<img src="../../images/createdb/engine.png?width=200pc" alt="engine"></li>
-<li>On the templates section, select <strong>Dev/Test</strong>
-<img src="../../images/createdb/template.png?width=200pc" alt="template"></li>
-<li>On settings, insert the DB instance name (this will be the name that will identify your RDS instance on the RDS dashboard) and on the credentials settings leave <strong>admin</strong> as the master user and insert a password (this will be the user credentials that you will use later to connect to the Oracle instance).
-<img src="../../images/createdb/settings.png?width=200pc" alt="settings"></li>
-<li>On instance size, select <strong>Burstable classess</strong> and then select the <strong>db.t3.small</strong> instance.
-<img src="../../images/createdb/size.png?width=200pc" alt="size"></li>
-<li>On storage, leave the default options, here you can see that the <strong>Storage autoscaling</strong> option is selected, this will reduce your administrative tasks by automatically scaling the storage of your rds instance.
-<img src="../../images/createdb/storage.png?width=200pc" alt="storage"></li>
-<li>On the Availability &amp; Durability secction, select the option <strong>&ldquo;Create a standby instance (recommended for production usage)&quot;</strong>, this will create a MultiAZ deployment which will deploy a secondary instance on a different Availability Zone, and Amazon RDS will perform automatic failover in case there is a filure on the primary instance
-<img src="../../images/createdb/multiaz.png?width=200pc" alt="multiaz"></li>
-</ul>
 </li>
 </ol>
+<ul>
+<li>
+<p>Database Creation Method select <strong>Standard Create</strong>
+<img src="../../images/createdb/creation-method.png?width=200pc" alt="method"></p>
+</li>
+<li>
+<p>Engine Options click <strong>Oracle</strong> and then select <strong>Oracle 19.0.0.0.ru-2019.rur-2019-07.r1</strong>.
+<img src="../../images/createdb/engine.png?width=200pc" alt="engine"></p>
+</li>
+<li>
+<p>On the templates section, select <strong>Dev/Test</strong>
+<img src="../../images/createdb/template.png?width=200pc" alt="template"></p>
+</li>
+<li>
+<p>On settings, insert the DB instance name (this will be the name that will identify your RDS instance on the databases list in th RDS console) and on the credentials settings leave <strong>admin</strong> as the master user and insert a password (this will be the user credentials that you will use later to connect to the Oracle instance).
+<img src="../../images/createdb/settings.png?width=200pc" alt="settings"></p>
+</li>
+<li>
+<p>On instance size, select <strong>Burstable classess</strong> and then select the <strong>db.t3.small</strong> instance.
+<img src="../../images/createdb/size.png?width=200pc" alt="size"></p>
+</li>
+<li>
+<p>On storage, leave the default options, here you can see that the <strong>Storage autoscaling</strong> option is selected, this will reduce your administrative tasks by automatically scaling the storage of your rds instance.
+<img src="../../images/createdb/storage.png?width=200pc" alt="storage"></p>
+</li>
+<li>
+<p>On the Availability &amp; Durability secction, select the option <strong>&ldquo;Create a standby instance (recommended for production usage)&quot;</strong>, this will create a MultiAZ deployment which will deploy a secondary instance on a different Availability Zone, and Amazon RDS will perform automatic failover in case there is a filure on the primary instance
+<img src="../../images/createdb/multiaz.png?width=200pc" alt="multiaz"></p>
+</li>
+<li>
+<p>On Connectivity, select the <strong>Default VPC</strong> and then expand the <strong>Additional connectivity configuration</strong> section, and here, select <strong>Yes</strong> for the Publicly accessible option, then select <strong>Create new</strong> for the VPC Security Group and enter <strong>Oracle</strong> for the VPC Security group name and leave the default port <strong>1521</strong>, this will create a new security group on your default vpc, with the name <strong>Oracle</strong>, the port 1521 for the port range and you current public ip as the source
+<img src="../../images/createdb/connectivity.png?width=200pc" alt="connectivity"></p>
+</li>
+<li>
+<p>On <strong>Database authentication</strong> leave the default option <strong>(Password authentication)</strong></p>
+</li>
+<li>
+<p>To finish, expand the <strong>Additional Configuration</strong> section, enter <strong>MFDB</strong> as the &ldquo;Initial database name&rdquo; then leave all the other options with the default selections and finally click on <strong>Create Database</strong>.
+<img src="../../images/createdb/additionalconfig.png?width=200pc" alt="additionalconfig">
+<img src="../../images/createdb/create2.png?width=15pc" alt="create2"></p>
+</li>
+</ul>
+<p>Now your RDS for Oracle Instance is deploying, this will take a few minutes to be ready. Once the status on the databases list changes from <strong>Creating</strong> to <strong>Available</strong> you can continue with the next section.</p>
 
 
 
@@ -1793,7 +1820,7 @@
 			<a class="nav nav-prev" href="../../en/createdb.html" title="Create an RDS Instance"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../en/createdb/connect.html" title="Connect" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../en/createdb/connect.html" title="Connect to your Oracle Database" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

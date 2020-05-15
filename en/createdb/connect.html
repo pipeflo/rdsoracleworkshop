@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>Connect :: RDS for Oracle Workshop</title>
+  <title>Connect to your Oracle Database :: RDS for Oracle Workshop</title>
 
   
   <link href="../../css/nucleus.css" rel="stylesheet">
@@ -400,13 +400,13 @@
  
   
     
-    <li data-nav-id="/en/createdb/connect.html" title="Connect" class="dd-item 
+    <li data-nav-id="/en/createdb/connect.html" title="Connect to your Oracle Database" class="dd-item 
         parent
         active
         
         ">
       <a href="../../en/createdb/connect.html">
-          Connect
+          Connect to your Oracle Database
           
       </a>
       
@@ -1110,7 +1110,7 @@
           
           
           
-          <a href='../../en/'>AWS Workshop Template</a> > <a href='../../en/createdb.html'>Create an RDS Instance</a> > Connect
+          <a href='../../en/'>AWS Workshop Template</a> > <a href='../../en/createdb.html'>Create an RDS Instance</a> > Connect to your Oracle Database
           
           
           
@@ -1133,13 +1133,63 @@
 
       
         <div id="body-inner">
-          <h1>Connect</h1>
+          <h1>Connect to your Oracle Database</h1>
           
           
 
 
 
-	<p>Lorem Ipsum.</p>
+	<p>In this section you will connect to the RDS for Oracle Instance deployed on the last section.</p>
+<ol>
+<li>
+<p>Once your Database status is <strong>Active</strong>, click on the database name to view the details.
+<img src="../../images/connect/selectdb.png?width=40pc" alt="selectdb"></p>
+</li>
+<li>
+<p>Now copy the endpoint generated for the database, this will be the hostname you will use in the next step to connect to the database, and it would be the one you would need to use to connect from an application.
+<img src="../../images/connect/endpoint.png?width=30pc" alt="endpoint"></p>
+</li>
+<li>
+<p>Now open <a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="_blank"><strong>SQL Developer</strong></a>, select <strong>New Connection</strong> and provide the following inputs and then click <strong>connect</strong>:</p>
+<p>Note: SQL Developer can be downloaded <a href="https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html" target="_blank">here</a>.</p>
+<ul>
+<li>Connection name: - &lt; User defined connection name&gt; <strong>rdsoracle</strong></li>
+<li>Username: - Master username provided during Database creation <strong>admin</strong></li>
+<li>Password: - Password provided for the Master Username during Database creation</li>
+<li>Hostname: - Endpoint copied in the step #2 above</li>
+<li>SID: - Database name provided during Database Creation <strong>MFDB</strong>
+<img src="../../images/connect/connection-info.png?width=40pc" alt="connection-info"></li>
+</ul>
+<p>Now you can see your connection to the Oracle database on the connections tab of SQL Developer.
+<img src="../../images/connect/connected.png?width=40pc" alt="connected"></p>
+</li>
+<li>
+<p>If the connection did not work you can try updating the Security Group created, following the next steps, if it did work, continue to step 5.</p>
+<ul>
+<li>Return to the RDS Console and on the RDS instance details, click on the link for the <strong>Oracle security group</strong> found on the Security column.
+<img src="../../images/connect/secgrouplink.png?width=80pc" alt="secgrouplink"></li>
+<li>On the security group details, click on the <strong>Inbound rules</strong> tab and then click the <strong>Edit inbound rules</strong> button
+<img src="../../images/connect/security-group.png?width=80pc" alt="security-group"></li>
+<li>On the Inbound rules for the Oracle Security group, click the &ldquo;Source&rdquo; option for the rule created, and change the selection from &ldquo;My IP&rdquo; to <strong>&ldquo;Anywhere&rdquo;</strong> then click on <strong>Save rules</strong>
+<img src="../../images/connect/inbound-rules.png?width=80pc" alt="inbound-rules"></li>
+<li>After changing the Security Group rule, test again the connection to you RDS for Oracle instance from <strong>SQL Developer</strong></li>
+</ul>
+</li>
+<li>
+<p>Now we are going to connect to the Instance using SQL*PLUS.</p>
+<ul>
+<li>Launch SQL*PLUS client and use the following command to connect to the DB, replace the host name with the your instance endpoint and SID with the your DB name.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">sqlplus &#39;&lt;<span style="color:#f92672">username</span>&gt;@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=&lt;<span style="color:#f92672">Hostname</span>&gt;)(PORT=1521))(CONNECT_DATA=(SID=&lt;<span style="color:#f92672">SID</span>&gt;)))&#39;
+</code></pre></div><p><img src="../../images/connect/sqlplus-1.png?width=80pc" alt="sqlplus-1"></p>
+<ul>
+<li>Now enter your password and finally enter the following command:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">select name from v$database;
+</code></pre></div><p>And you should see a result like the following image:
+<img src="../../images/connect/sqlplus-2.png?width=80pc" alt="sqlplus-2"></p>
+</li>
+</ol>
 
 
 

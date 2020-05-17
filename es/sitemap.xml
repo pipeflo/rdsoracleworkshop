@@ -4,7 +4,7 @@
   
   <url>
     <loc>/es/</loc>
-    <lastmod>2020-05-12T21:15:07-05:00</lastmod>
+    <lastmod>2020-05-15T09:56:22-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -78,6 +78,21 @@
   </url>
   
   <url>
+    <loc>/es/createdb/connect.html</loc>
+    <lastmod>2020-05-12T21:15:07-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/createdb/connect.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/createdb/connect.html"
+                />
+  </url>
+  
+  <url>
     <loc>/es/setup.html</loc>
     <lastmod>2020-05-12T14:36:53-05:00</lastmod>
     <xhtml:link
@@ -108,6 +123,21 @@
   </url>
   
   <url>
+    <loc>/es/createdb/multiaz.html</loc>
+    <lastmod>2020-05-15T09:56:22-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/createdb/multiaz.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/createdb/multiaz.html"
+                />
+  </url>
+  
+  <url>
     <loc>/es/createdb.html</loc>
     <lastmod>2020-05-12T21:12:40-05:00</lastmod>
     <xhtml:link
@@ -134,21 +164,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="/es/intro/licensing.html"
-                />
-  </url>
-  
-  <url>
-    <loc>/es/createdb/connect.html</loc>
-    <lastmod>2020-05-12T21:15:07-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/createdb/connect.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="/es/createdb/connect.html"
                 />
   </url>
   

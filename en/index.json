@@ -51,6 +51,10 @@
 		"relativePagePath": "/en/createdb/connect.html"
 	},
 	{
+		"pageTitle": "Automatic Failover with Multi-AZ",
+		"relativePagePath": "/en/createdb/multiaz.html"
+	},
+	{
 		"pageTitle": "Basics",
 		"relativePagePath": "/en/basics.html"
 	},

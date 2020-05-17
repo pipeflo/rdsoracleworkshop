@@ -49,4 +49,8 @@
 	{
 		"pageTitle": "Connect",
 		"relativePagePath": "/es/createdb/connect.html"
+	},
+	{
+		"pageTitle": "Multiaz",
+		"relativePagePath": "/es/createdb/multiaz.html"
 	}]

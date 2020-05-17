@@ -1148,7 +1148,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#rds-oracle-does-provide-customers-an-option-to-simulate-the-az-failure-and-high-availability-by-offering-the-option-to-reboot-the-rds-oracle-instance-with-the-failover-option-this-option-will-initiate-az-level-failover-for-the-instance-the-instance-on-the-secondary-az-will-become-primary-and-the-instance-on-the-primary-become-secondary">RDS Oracle does provide customer’s an option to simulate the AZ failure and High Availability by offering the option to reboot the RDS Oracle Instance with the failover option. This option will initiate AZ level failover for the Instance, the instance on the secondary AZ will become primary and the instance on the primary become secondary.</a></li>
+    <li><a href="#summary">Summary</a>
+      <ul>
+        <li><a href="#benefits">Benefits</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -1169,23 +1173,56 @@
 
 	<p>In this section we will show how the Multi-AZ feature selected when you created your RDS for Oracle instance, provides automatic failover in case there is any failure with the primary instance.</p>
 <ol>
-<li>First we will verify that the Multi-AZ feature is turned on, for this, go to the RDS Databases list and click on the Oracle Instance you created on the first chapter of the workshop, now, click on the <strong>Configuration</strong> tab and then scroll down and check that the Multi AZ option has the <strong>Yes</strong> value.
-<img src="../../images/multiaz/multiaz-yes.png?width=80pc" alt="multiaz-yes">.</li>
-</ol>
+<li>
+<p>First we will verify that the Multi-AZ feature is turned on, for this, go to the RDS Databases list and click on the Oracle Instance you created on the first chapter of the workshop, now, click on the <strong>Configuration</strong> tab and then scroll down and check that the Multi AZ option has the <strong>Yes</strong> value.
+<img src="../../images/multiaz/multiaz-yes.png?width=80pc" alt="multiaz-yes"></p>
 <p>Note: In case you did not turned on the Multi AZ feature you can follow the next steps to turn it on.</p>
 <ul>
 <li>Click on the <strong>Modify</strong> button at the top of the page.
-<img src="../../images/multiaz/modify.png?width=20pc" alt="modify">.</li>
+<img src="../../images/multiaz/modify.png?width=20pc" alt="modify"></li>
 <li>Here you can modify some of the features of your RDS Instance, please look for the <strong>Multi-AZ deployment</strong> option and change the value to <strong>Yes</strong>, then go to the bottom of the page and click on <strong>Continue</strong>
-<img src="../../images/multiaz/continue.png?width=80pc" alt="continue">.</li>
+<img src="../../images/multiaz/select-yes.png?width=80pc" alt="select-yes">
+<img src="../../images/multiaz/continue.png?width=80pc" alt="continue"></li>
 <li>Now select <strong>Apply Immediately</strong> on the &ldquo;Scheduling of modifications&rdquo; section and then click <strong>Modify DB Instance</strong>, this will excecute the modifications as soon as possible and will not wait unti the next configured maintenance window
-<img src="../../images/multiaz/apply-immediately.png?width=80pc" alt="apply-immediately">.</li>
+<img src="../../images/multiaz/apply-immediately.png?width=80pc" alt="apply-immediately"></li>
 <li>Now please wait until the Modification finishes. You can check the status on the Databases list.</li>
 </ul>
-<ol start="2">
-<li>Now, we are going to simulate the AZ Failover on the RDS Oracle instance.</li>
+</li>
+<li>
+<p>Now, we are going to simulate the AZ Failover on the RDS Oracle instance.</p>
+<p>RDS Oracle does provide customer’s an option to simulate the AZ failure and High Availability by offering the option to reboot the RDS Oracle Instance with the failover option. This option will initiate AZ level failover for the Instance, the instance on the secondary AZ will become primary and the instance on the primary become secondary.</p>
+<ul>
+<li>Verify the primary and secondary AZ for the RDS Oracle Database Instance.  Choose your RDS Oracle Instance from the RDS databases list page by clicking Databases and after selecting your instance look for the &ldquo;Availability zone&rdquo; value on the &ldquo;Networking&rdquo; column.
+<img src="../../images/multiaz/db-az.png?width=20pc" alt="db-az"></li>
+<li>To initiate AZ failover, click on the <strong>Actions</strong> button on the top right and then click on <strong>Reboot</strong>
+<img src="../../images/multiaz/reboot.png?width=20pc" alt="reboot"></li>
+<li>Choose the checkbox for <strong>Reboot with Failover</strong> and click on the <strong>Reboot</strong> to initiate the failover.
+<img src="../../images/multiaz/failover-yes.png?width=80pc" alt="failover-yes"></li>
+<li>Once the RDS Oracle Database Instance is rebooted and status shows available, check for the value of the <strong>Availability Zone</strong> and it should now display a different one from the previous one.
+<img src="../../images/multiaz/new-az.png?width=20pc" alt="new-az"></li>
+</ul>
+</li>
 </ol>
-<h2 id="rds-oracle-does-provide-customers-an-option-to-simulate-the-az-failure-and-high-availability-by-offering-the-option-to-reboot-the-rds-oracle-instance-with-the-failover-option-this-option-will-initiate-az-level-failover-for-the-instance-the-instance-on-the-secondary-az-will-become-primary-and-the-instance-on-the-primary-become-secondary">RDS Oracle does provide customer’s an option to simulate the AZ failure and High Availability by offering the option to reboot the RDS Oracle Instance with the failover option. This option will initiate AZ level failover for the Instance, the instance on the secondary AZ will become primary and the instance on the primary become secondary.</h2>
+<h2 id="summary">Summary</h2>
+<p>Congratulations!! you have finished the first lab of this RDS for Oracle Workshop, where you created a new RDS Oracle Instance, connected to it and then simulated a failover using the Multi AZ future of RDS.
+Here is a list of the benefits you have tested using RDS:</p>
+<h3 id="benefits">Benefits</h3>
+<ul>
+<li>Replication to a standby replica is synchronous which is highly durable.</li>
+<li>When a problem is detected on the primary instance, it will automatically failover to the standby in the following conditions:
+<ul>
+<li>The primary DB instance fails</li>
+<li>An Availability Zone outage</li>
+<li>The DB instance server type is changed</li>
+<li>The operating system of the DB instance is undergoing software patching.</li>
+<li>A manual failover of the DB instance was initiated using Reboot with failover.</li>
+</ul>
+</li>
+<li>The endpoint of the DB instance remains the same after a failover, the application can resume database operations without manual intervention.</li>
+<li>If a failure occurs, your availability impact is limited to the time that the automatic failover takes to complete. This helps to achieve increased availability.</li>
+<li>It reduces the impact of maintenance. <strong>RDS performs maintenance on the standby first</strong>, promotes the standby to primary master, and then performs maintenance on the old master which is now a standby replica.</li>
+<li>To prevent any negative impact of the backup process on performance, <strong>Amazon RDS creates a backup from the standby replica</strong>.</li>
+</ul>
 
 
 

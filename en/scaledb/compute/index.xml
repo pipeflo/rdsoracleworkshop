@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scale Compute on RDS for Oracle Workshop</title>
+    <link>/en/scaledb/compute.html</link>
+    <description>Recent content in Scale Compute on RDS for Oracle Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 17 May 2020 14:12:37 -0500</lastBuildDate>
+    
+	<atom:link href="/en/scaledb/compute/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

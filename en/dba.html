@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="RDS for Oracle Workshop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="description" content="My AWS Workshop">
+<meta name="author" content="Jane Architect">
+
+  <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+<link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+
+  <title>DBA tasks for RDS Oracle DB :: RDS for Oracle Workshop</title>
+
+  
+  <link href="../css/nucleus.css" rel="stylesheet">
+  <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="../css/hybrid.css" rel="stylesheet">
+  <link href="../css/featherlight.min.css" rel="stylesheet">
+  <link href="../css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="../css/auto-complete.css" rel="stylesheet">
+  <link href="../css/atom-one-dark-reasonable.css" rel="stylesheet">
+  <link href="../css/theme.css" rel="stylesheet">
+  <link href="../css/hugo-theme.css" rel="stylesheet">
+  
+  <link href="../css/theme-aws.css" rel="stylesheet">
+  
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+
+  <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+      :not(pre) > code + span.copy-to-clipboard {
+          display: none;
+      }
+    
+  </style>
+  
+</head>
+
+<body class="" data-url="/en/dba.html">
+  <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div>
+    <a href="../" title="Go home">
+        <img style="vertical-align:middle" src="../images/logo.png" height="70px" />
+    </a>
+</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js"></script>
+<script type="text/javascript" src="../js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/en";
+    
+</script>
+<script type="text/javascript" src="../js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/intro.html" title="Intro" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/intro.html">
+          Intro
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/intro/database-compute.html" title="Database Compute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/intro/database-compute.html">
+          Database Compute
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/intro/storage.html" title="Database Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/intro/storage.html">
+          Database Storage
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/intro/licensing.html" title="Licensing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/intro/licensing.html">
+          Licensing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/setup.html" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/setup.html">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/setup/event.html" title="…attending an AWS hosted event" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/setup/event.html">
+          …attending an AWS hosted event
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/setup/event/login.html" title="Event Engine" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/setup/event/login.html">
+          Event Engine
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/setup/own.html" title="...running the workshop on your own" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/setup/own.html">
+          ...running the workshop on your own
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/setup/own/create.html" title="Create an AWS Account" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/setup/own/create.html">
+          Create an AWS Account
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/createdb.html" title="Create an RDS Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/createdb.html">
+          Create an RDS Instance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/createdb/deploy.html" title="Create an RDS Oracle Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/createdb/deploy.html">
+          Create an RDS Oracle Instance
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/createdb/connect.html" title="Connect to your Oracle Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/createdb/connect.html">
+          Connect to your Oracle Database
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/createdb/multiaz.html" title="Automatic Failover with Multi-AZ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/createdb/multiaz.html">
+          Automatic Failover with Multi-AZ
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/scaledb.html" title="Scale your RDS Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/scaledb.html">
+          Scale your RDS Instance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/scaledb/compute.html" title="Scale Compute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/scaledb/compute.html">
+          Scale Compute
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/scaledb/storage.html" title="Scale Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/scaledb/storage.html">
+          Scale Storage
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/scaledb/optimized.html" title="Configure Optimized CPU Feature" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/scaledb/optimized.html">
+          Configure Optimized CPU Feature
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/backup.html" title="Backup and Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/backup.html">
+          Backup and Restore
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/backup/automated.html" title="Automated Backup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/backup/automated.html">
+          Automated Backup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/backup/manual.html" title="Manual Backups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/backup/manual.html">
+          Manual Backups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/backup/snapshot.html" title="Snapshot Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/backup/snapshot.html">
+          Snapshot Restore
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/backup/pointintime.html" title="Point in time Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/backup/pointintime.html">
+          Point in time Restore
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/upgrade.html" title="Database Upgrades" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/upgrade.html">
+          Database Upgrades
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/upgrade/minor.html" title="RDS Oracle Upgrade" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/upgrade/minor.html">
+          RDS Oracle Upgrade
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/logs.html" title="Logs and Performance Insights" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/logs.html">
+          Logs and Performance Insights
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/logs/export.html" title="Export RDS Oracle logs to CloudWatch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/logs/export.html">
+          Export RDS Oracle logs to CloudWatch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/logs/view.html" title="View RDS Oracle logs on CloudWatch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/logs/view.html">
+          View RDS Oracle logs on CloudWatch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/groups.html" title="Parameter and Option Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/groups.html">
+          Parameter and Option Groups
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/groups/parameter.html" title="Parameter Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/groups/parameter.html">
+          Parameter Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/groups/option.html" title="Option Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../en/groups/option.html">
+          Option Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/dba.html" title="DBA tasks for RDS Oracle DB" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="../en/dba.html">
+          DBA tasks for RDS Oracle DB
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="es" value="/es/dba.html">Español</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="en" value="/en/dba.html" selected>English</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <h5 class="copyright">&copy; 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+  <section id="body">
+    <div id="overlay"></div>
+    <div class="padding highlightable">
+      
+      <div>
+        <div id="top-bar">
+          
+          
+          
+          
+          <div id="top-github-link">
+            <a class="github-link" title='Edit this page' href="https://code.amazon.com/packages/Aws-workshop-template/blobs/master/--/workshop/content/dba/_index.en.md"
+              target="blank">
+              <i class="fas fa-code-branch"></i>
+              <span id="top-github-link-text">Edit this page</span>
+            </a>
+          </div>
+          
+          
+          
+          <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+            
+            <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+            
+            <span class="links">
+              
+          
+          
+          
+          
+          
+          
+          <a href='../en/'>RDS Oracle Workshop</a> > DBA tasks for RDS Oracle DB
+          
+          
+          
+          
+            </span>
+          </div>
+          
+          <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#viewdownload-logs-from-aws-console">View/Download Logs from AWS console</a></li>
+    <li><a href="#view-logs-using-rds-plsql-packages">View logs using RDS PL/SQL packages</a></li>
+    <li><a href="#common-dba-tasks-for-redo-log-archive-log-and-other-logging">Common DBA tasks for redo log, archive log and other logging</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+          
+        </div>
+      </div>
+      
+
+      
+        <div id="body-inner">
+          <h1>DBA tasks for RDS Oracle DB</h1>
+          
+          
+
+
+
+	<p>To deliver a managed service experience, Amazon RDS doesn&rsquo;t provide shell access to DB instances, and restricts access to certain system procedures and tables that require advanced privileges.</p>
+<p>In this chapter you will find how to execute some common DBA tasks using RDS Procedures.</p>
+<h2 id="viewdownload-logs-from-aws-console">View/Download Logs from AWS console</h2>
+<ol>
+<li>Find the RDS Oracle created instance under the <strong>Databases</strong> list and click on the DB Instance name.
+<img src="../images/scale/compute/select-db.png?width=80pc" alt="select-db"></li>
+<li>On the RDS Instance details, click on the <strong>Log &amp; events</strong> tab and go to the bottom of the page.
+<img src="../images/dba/view-logs.png?width=80pc" alt="view-logs"></li>
+<li>Here you can select the Log file and click on <strong>View</strong> to see the content.
+<img src="../images/dba/log-content.png?width=80pc" alt="log-content"></li>
+</ol>
+<h2 id="view-logs-using-rds-plsql-packages">View logs using RDS PL/SQL packages</h2>
+<p>To view the logs from SQL*Plus, you can run the following queries.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">select message_text from ALERTLOG where rownum<span style="color:#960050;background-color:#1e0010">&lt;</span>=10 order by indx;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">SELECT text FROM table(rdsadmin.rds_file_util.read_text_file(&#39;BDUMP&#39;,&#39;alert_MFDB.log&#39;)) where rownum<span style="color:#960050;background-color:#1e0010">&lt;</span>=10;
+</code></pre></div><p><img src="../images/dba/logs-queries.png?width=80pc" alt="logs-queries"></p>
+<h2 id="common-dba-tasks-for-redo-log-archive-log-and-other-logging">Common DBA tasks for redo log, archive log and other logging</h2>
+<ol>
+<li>
+<p>Retaining Archived Log files, You can use the Amazon RDS procedure rdsadmin.<em>rdsadmin_util.show_configuration</em> to view how long archived redo logs are retained for your DB instance.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">set serveroutput on;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">exec rdsadmin.rdsadmin_util.show_configuration;
+</code></pre></div><p><img src="../images/dba/redo-logs.png?width=80pc" alt="redo-logs"></p>
+</li>
+<li>
+<p>You can use the Amazon RDS procedure <em>rdsadmin.rdsadmin_util.set_configuration</em> to retain archived redo logs. The below example set the archive retention to 48 hours.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">begin
+rdsadmin.rdsadmin_util.set_configuration(
+name=&gt; &#39;archivelog retention hours&#39;,
+value=&gt; &#39;48&#39;);
+end;
+/
+</code></pre></div><p><img src="../images/dba/configure-retention.png?width=80pc" alt="configure-retention"></p>
+</li>
+<li>
+<p>Switching Online redo log file –  you can use the Amazon RDS procedure <em>rdsadmin.rdsadmin_util.switch_logfile</em> to switch files.</p>
+<p>Verify the current log sequence number in the database as shown below and then run the command to switch the log file and query the current log sequence number again.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">select sequence# from v$log where status=&#39;CURRENT&#39;;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">exec rdsadmin.rdsadmin_util.switch_logfile;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">select sequence# from v$log where status=&#39;CURRENT&#39;;
+</code></pre></div><p><img src="../images/dba/switch-file.png?width=80pc" alt="switch-file"></p>
+</li>
+<li>
+<p>Working with Directory object and the files:</p>
+<p>You can use the Amazon RDS procedure <em>rdsadmin.rdsadmin_util.create_directory</em> to create directories. You can create up to 10,000 directories, all located in your main data storage space.</p>
+<p>The following example creates a new directory named <strong>product_descriptions</strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">exec rdsadmin.rdsadmin_util.create_directory(p_directory_name=&gt; &#39;product_descriptions&#39;);
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">select directory_path from dba_directories where directory_name=&#39;PRODUCT_DESCRIPTIONS&#39;;
+</code></pre></div><p><img src="../images/dba/create-directory.png?width=80pc" alt="create-directory"></p>
+<p><strong>Now Create a sample file in the newly created directory as shown below</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">DECLARE
+out_file UTL_FILE.FILE_TYPE;
+BEGIN
+out_file := UTL_FILE.FOPEN(&#39;PRODUCT_DESCRIPTIONS&#39;,&#39;test.txt&#39;,&#39;W&#39;);
+UTL_FILE.PUT_LINE(out_file,&#39;this is a text file&#39;);
+UTL_FILE.FCLOSE(out_file);
+end;
+/
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">select * from table
+(rdsadmin.rds_file_util.listdir(p_directory =&gt; &#39;PRODUCT_DESCRIPTIONS&#39;));
+</code></pre></div><p><img src="../images/dba/create-file.png?width=80pc" alt="create-file"></p>
+<p><strong>List the content of the file <em>test.txt</em> as shown below</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">select * from table (rdsadmin.rds_file_util.read_text_file(p_directory =&gt; &#39;PRODUCT_DESCRIPTIONS&#39;,p_filename  =&gt; &#39;test.txt&#39;));
+</code></pre></div><p><img src="../images/dba/view-file.png?width=80pc" alt="view-file">
+You can see the complete DBA Tasks and how to execute them in this <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.CommonDBATasks.html" target="_blank">link</a>.</p>
+</li>
+</ol>
+<p>Congratulations!! You have finished this Lab and the Complete RDS for Oracle Workshop.</p>
+<p>If you are taking this Workshop in your own account, do not forget to delete all the resources created (RDS Instances, Backups, Snapshots, etc..).</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../en/groups/option.html" title="Option Groups"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../en/intro.html" title="Intro" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/perfect-scrollbar.min.js"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/featherlight.min.js"></script>
+    <script src="../js/html5shiv-printshiv.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js"></script>
+    <script src="../js/learn.js"></script>
+    <script src="../js/hugo-learn.js"></script>
+
+    <link href="../mermaid/mermaid.css" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <div id = 'kinesisStreamName' title = ""/></div>
+<div id = 'cognitoPoolId' title = ""/></div>
+<div id = 'awsRegion' title = ""/></div>
+<div id = 'contentId' title = ""/></div>
+<div id = 'language' title = "en"/></div>
+<div id = 'versions' title = ""/></div>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+<script src="../js/kinesis.js"></script>
+  </body>
+</html>

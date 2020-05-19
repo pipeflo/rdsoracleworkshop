@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="RDS for Oracle Workshop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="description" content="My AWS Workshop">
+<meta name="author" content="Jane Architect">
+
+  <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+<link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+
+  <title>Parameter Groups :: RDS for Oracle Workshop</title>
+
+  
+  <link href="../css/nucleus.css" rel="stylesheet">
+  <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="../css/hybrid.css" rel="stylesheet">
+  <link href="../css/featherlight.min.css" rel="stylesheet">
+  <link href="../css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="../css/auto-complete.css" rel="stylesheet">
+  <link href="../css/atom-one-dark-reasonable.css" rel="stylesheet">
+  <link href="../css/theme.css" rel="stylesheet">
+  <link href="../css/hugo-theme.css" rel="stylesheet">
+  
+  <link href="../css/theme-aws.css" rel="stylesheet">
+  
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+
+  <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+      :not(pre) > code + span.copy-to-clipboard {
+          display: none;
+      }
+    
+  </style>
+  
+</head>
+
+<body class="" data-url="/groups/parameter.html">
+  <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div>
+    <a href="../" title="Go home">
+        <img style="vertical-align:middle" src="../images/logo.png" height="70px" />
+    </a>
+</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js"></script>
+<script type="text/javascript" src="../js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="../js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/intro.html" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro.html">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro/database-compute.html" title="Database Compute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro/database-compute.html">
+          Database Compute
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro/storage.html" title="Database Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro/storage.html">
+          Database Storage
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro/licensing.html" title="Licensing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro/licensing.html">
+          Licensing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/setup.html" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup.html">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/event.html" title="…attending an AWS hosted event" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/event.html">
+          …attending an AWS hosted event
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/event/login.html" title="Event Engine" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/event/login.html">
+          Event Engine
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/own.html" title="...running the workshop on your own" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/own.html">
+          ...running the workshop on your own
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/own/create.html" title="Create an AWS Account" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/own/create.html">
+          Create an AWS Account
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb.html" title="Create an RDS Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb.html">
+          Create an RDS Instance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb/deploy.html" title="Create an RDS Oracle Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb/deploy.html">
+          Create an RDS Oracle Instance
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb/connect.html" title="Connect to your Oracle Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb/connect.html">
+          Connect to your Oracle Database
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb/multiaz.html" title="Automatic Failover with Multi-AZ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb/multiaz.html">
+          Automatic Failover with Multi-AZ
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb.html" title="Scale your RDS Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb.html">
+          Scale your RDS Instance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb/compute.html" title="Scale Compute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb/compute.html">
+          Scale Compute
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb/storage.html" title="Scale Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb/storage.html">
+          Scale Storage
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb/optimized.html" title="Configure Optimized CPU Feature" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb/optimized.html">
+          Configure Optimized CPU Feature
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/backup.html" title="Backup and Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup.html">
+          Backup and Restore
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/automated.html" title="Automated Backup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/automated.html">
+          Automated Backup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/manual.html" title="Manual Backups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/manual.html">
+          Manual Backups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/snapshot.html" title="Snapshot Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/snapshot.html">
+          Snapshot Restore
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/pointintime.html" title="Point in time Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/pointintime.html">
+          Point in time Restore
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/upgrade.html" title="Database Upgrades" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../upgrade.html">
+          Database Upgrades
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/upgrade/minor.html" title="RDS Oracle Upgrade" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../upgrade/minor.html">
+          RDS Oracle Upgrade
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/logs.html" title="Logs and Performance Insights" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../logs.html">
+          Logs and Performance Insights
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/logs/export.html" title="Export RDS Oracle logs to CloudWatch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../logs/export.html">
+          Export RDS Oracle logs to CloudWatch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/logs/view.html" title="View RDS Oracle logs on CloudWatch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../logs/view.html">
+          View RDS Oracle logs on CloudWatch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/groups.html" title="Parameter and Option Groups" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../groups.html">
+          Parameter and Option Groups
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/groups/parameter.html" title="Parameter Groups" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="../groups/parameter.html">
+          Parameter Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/groups/option.html" title="Option Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../groups/option.html">
+          Option Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dba.html" title="DBA tasks for RDS Oracle DB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../dba.html">
+          DBA tasks for RDS Oracle DB
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <left>
+
+    <h5 class="copyright">&copy; 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+  <section id="body">
+    <div id="overlay"></div>
+    <div class="padding highlightable">
+      
+      <div>
+        <div id="top-bar">
+          
+          
+          
+          
+          <div id="top-github-link">
+            <a class="github-link" title='Edit this page' href="https://code.amazon.com/packages/Aws-workshop-template/blobs/master/--/workshop/content/groups/parameter/_index.en.md"
+              target="blank">
+              <i class="fas fa-code-branch"></i>
+              <span id="top-github-link-text">Edit this page</span>
+            </a>
+          </div>
+          
+          
+          
+          <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+            
+            <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+            
+            <span class="links">
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href='../'>RDS Oracle Workshop</a> > <a href='../groups.html'>Parameter and Option Groups</a> > Parameter Groups
+          
+          
+          
+          
+          
+          
+            </span>
+          </div>
+          
+          <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-the-parameter-group">Creating the Parameter Group</a></li>
+    <li><a href="#modifying-the-parameter-in-the-parameter-group">Modifying the Parameter in the parameter Group</a></li>
+    <li><a href="#associating-new-parameter-group-to-your-instance">Associating new Parameter Group to your Instance</a>
+      <ul>
+        <li><a href="#parameter-group-behaviour">Parameter Group behaviour</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+          
+        </div>
+      </div>
+      
+
+      
+        <div id="body-inner">
+          <h1>Parameter Groups</h1>
+          
+          
+
+
+
+	<h2 id="creating-the-parameter-group">Creating the Parameter Group</h2>
+<ol>
+<li>On the RDS home page, select <strong>&ldquo;Parameter Groups&rdquo;</strong> on the left-hand side and then click on the <strong>Create parameter group</strong> button at the top right corner.
+<img src="../images/groups/parameter/parameter-group-link.png?width=80pc" alt="parameter-group-link"></li>
+<li>On the Create Parameter group provide input as below and then click <strong>Create</strong>:
+<ul>
+<li><strong>Parameter group family</strong> - choose <strong>&ldquo;oracle-ee-19&rdquo;</strong></li>
+<li><strong>Group name</strong> – <em>custom-oracle19-parameter-group</em></li>
+<li><strong>Description</strong> - <em>Custom parameter group for Oracle 19</em>
+<img src="../images/groups/parameter/create-parameter-group.png?width=80pc" alt="create-parameter-group"></li>
+</ul>
+</li>
+</ol>
+<h2 id="modifying-the-parameter-in-the-parameter-group">Modifying the Parameter in the parameter Group</h2>
+<ol>
+<li>On the Parameter groups table, select the parameter group created <strong>(custom-oracle19-parameter-group)</strong>, click the <strong>Parameter group actions</strong> button and then click on <strong>Edit</strong>.
+<img src="../images/groups/parameter/select-parameter-group.png?width=80pc" alt="select-parameter-group"></li>
+<li>Under the &ldquo;filter parameters&rdquo; type <em>job_queue_process</em>, change the <strong>job_queue_process</strong> value from 50 to <em>100</em> and then click the <strong>Save Changes</strong> button.
+<ul>
+<li>In case you change make several changes to the custom parameter group, you can see preview them before saving by clicking the <strong>Preview changes</strong> button.
+<img src="../images/groups/parameter/edit-parameter-group.png?width=80pc" alt="edit-parameter-group">
+Now that the changes are saved, you are going to associate the new parameter group to your RDS Oracle instance.</li>
+</ul>
+</li>
+</ol>
+<h2 id="associating-new-parameter-group-to-your-instance">Associating new Parameter Group to your Instance</h2>
+<ol>
+<li>
+<p>Find the RDS Oracle created instance under the <strong>Databases</strong> list and click on the DB Instance name.
+<img src="../images/scale/compute/select-db.png?width=80pc" alt="select-db"></p>
+</li>
+<li>
+<p>On the RDS Instance details, click on the <strong>Modify</strong> button.
+<img src="../images/scale/compute/modify.png?width=80pc" alt="modify"></p>
+</li>
+<li>
+<p>On the next page under &ldquo;Database Options&rdquo; change the <strong>DB Parameter Group</strong> from the dropdown to the new Parameter Group <strong>&ldquo;custom-oracle19-parameter-group&rdquo;</strong> created in the previous step, leave all other fields as they are and then click <strong>Continue</strong> at the bottom of the page.
+<img src="../images/groups/parameter/choose-parameter-group.png?width=80pc" alt="choose-parameter-group">
+<img src="../images/multiaz/continue.png?width=80pc" alt="continue"></p>
+</li>
+<li>
+<p>Now select <strong>Apply Immediately</strong> on the &ldquo;Scheduling of modifications&rdquo; section and then click <strong>Modify DB Instance</strong>.
+<img src="../images/multiaz/apply-immediately.png?width=80pc" alt="apply-immediately"></p>
+</li>
+<li>
+<p>Once the modify instance task is completed, this can be verified by looking at the status column for your Database instance on the Databases page. When the status column shows “Available” it means the modification to the instance is completed.</p>
+</li>
+<li>
+<p>We need to reboot the Instance manually to apply the new parameter group to the Instance. This can be verified on the Instance details page under the parameter Group section which will show <strong>&ldquo;Pending-reboot&rdquo;</strong>
+<img src="../images/groups/parameter/pending.png?width=80pc" alt="pending"></p>
+</li>
+<li>
+<p>Reboot the instance manually, choose your Instance from the RDS home page and under Instance actions choose “Reboot”.
+<img src="../images/groups/parameter/select-reboot.png?width=80pc" alt="select-reboot"></p>
+</li>
+<li>
+<p>Click <strong>Reboot</strong>
+<img src="../images/groups/parameter/reboot.png?width=80pc" alt="reboot"></p>
+</li>
+<li>
+<p>Verify the status of the instance on the RDS home page, once the status of the instance becomes available, verify the value of the parameter <strong>&ldquo;job_queue_process&rdquo;</strong> to make sure it has changed to 100 by connecting to your RDS Instance using SQL*Plus and running the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">show parameter job_queue;
+</code></pre></div><p><img src="../images/groups/parameter/verify.png?width=80pc" alt="verify"></p>
+</li>
+</ol>
+<p>Congratulations!! You have created and applied a Parameter Group to you RDS Oracle Instance.</p>
+<h3 id="parameter-group-behaviour">Parameter Group behaviour</h3>
+<ul>
+<li>
+<p>When you change a dynamic parameter and save the DB parameter group, the change is applied immediately regardless of the Apply Immediately setting. When you change a static parameter and save the DB parameter group, the parameter change will take effect after you manually reboot the DB instance.</p>
+</li>
+<li>
+<p>When you change the DB parameter group associated with a DB instance, you must manually reboot the instance before the new DB parameter group is used by the DB instance.</p>
+</li>
+<li>
+<p>The value for a DB parameter can be specified as an integer or as an integer expression built from formulas, variables, functions, and operators. Functions can include a mathematical log expression</p>
+</li>
+<li>
+<p>Improperly setting parameters in a DB parameter group can have unintended adverse effects, including degraded performance and system instability. Always exercise caution when modifying database parameters and back up your data before modifying a DB parameter group</p>
+</li>
+</ul>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../groups.html" title="Parameter and Option Groups"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../groups/option.html" title="Option Groups" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/perfect-scrollbar.min.js"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/featherlight.min.js"></script>
+    <script src="../js/html5shiv-printshiv.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js"></script>
+    <script src="../js/learn.js"></script>
+    <script src="../js/hugo-learn.js"></script>
+
+    <link href="../mermaid/mermaid.css" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <div id = 'kinesisStreamName' title = ""/></div>
+<div id = 'cognitoPoolId' title = ""/></div>
+<div id = 'awsRegion' title = ""/></div>
+<div id = 'contentId' title = ""/></div>
+<div id = 'language' title = "en"/></div>
+<div id = 'versions' title = ""/></div>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+<script src="../js/kinesis.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 [
 	{	"pageTitle": "Index",
 		"relativePagePath": "/en/"
-	},    
+	},
 	{
 		"pageTitle": "Intro",
 		"relativePagePath": "/en/intro.html"
@@ -55,86 +55,74 @@
 		"relativePagePath": "/en/createdb/multiaz.html"
 	},
 	{
-		"pageTitle": "Basics",
-		"relativePagePath": "/en/basics.html"
+		"pageTitle": "Scale your RDS Instance",
+		"relativePagePath": "/en/scaledb.html"
 	},
 	{
-		"pageTitle": "Requirements",
-		"relativePagePath": "/en/basics/requirements.html"
+		"pageTitle": "Scale Compute",
+		"relativePagePath": "/en/scaledb/compute.html"
 	},
 	{
-		"pageTitle": "Installation",
-		"relativePagePath": "/en/basics/installation.html"
+		"pageTitle": "Scale Storage",
+		"relativePagePath": "/en/scaledb/storage.html"
 	},
 	{
-		"pageTitle": "Configuration",
-		"relativePagePath": "/en/basics/configuration.html"
+		"pageTitle": "Configure Optimized CPU Feature",
+		"relativePagePath": "/en/scaledb/optimized.html"
 	},
 	{
-		"pageTitle": "Content",
-		"relativePagePath": "/en/cont.html"
+		"pageTitle": "Backup and Restore",
+		"relativePagePath": "/en/backup.html"
 	},
 	{
-		"pageTitle": "Pages Organization",
-		"relativePagePath": "/en/cont/pages.html"
+		"pageTitle": "Automated Backup",
+		"relativePagePath": "/en/backup/automated.html"
 	},
 	{
-		"pageTitle": "Archetypes",
-		"relativePagePath": "/en/cont/archetypes.html"
+		"pageTitle": "Manual Backups",
+		"relativePagePath": "/en/backup/manual.html"
 	},
 	{
-		"pageTitle": "Markdown Syntax",
-		"relativePagePath": "/en/cont/markdown.html"
+		"pageTitle": "Snapshot Restore",
+		"relativePagePath": "/en/backup/snapshot.html"
 	},
 	{
-		"pageTitle": "Icons and Logos",
-		"relativePagePath": "/en/cont/icons.html"
+		"pageTitle": "Point in time Restore",
+		"relativePagePath": "/en/backup/pointintime.html"
 	},
 	{
-		"pageTitle": "Multilingual and i18n",
-		"relativePagePath": "/en/cont/i18n.html"
+		"pageTitle": "Database Upgrades",
+		"relativePagePath": "/en/upgrade.html"
 	},
 	{
-		"pageTitle": "Shortcodes",
-		"relativePagePath": "/en/shortcodes.html"
+		"pageTitle": "RDS Oracle Upgrade",
+		"relativePagePath": "/en/upgrade/minor.html"
 	},
 	{
-		"pageTitle": "Attachments",
-		"relativePagePath": "/en/shortcodes/attachments.html"
+		"pageTitle": "Logs and Performance Insights",
+		"relativePagePath": "/en/logs.html"
 	},
 	{
-		"pageTitle": "Button",
-		"relativePagePath": "/en/shortcodes/button.html"
+		"pageTitle": "Export RDS Oracle logs to CloudWatch",
+		"relativePagePath": "/en/logs/export.html"
 	},
 	{
-		"pageTitle": "Children",
-		"relativePagePath": "/en/shortcodes/children.html"
-	},    
-	{
-		"pageTitle": "Expand",
-		"relativePagePath": "/en/shortcodes/expand.html"
+		"pageTitle": "View RDS Oracle logs on CloudWatch",
+		"relativePagePath": "/en/logs/view.html"
 	},
 	{
-		"pageTitle": "Image",
-		"relativePagePath": "/en/shortcodes/img.html"
+		"pageTitle": "Parameter and Option Groups",
+		"relativePagePath": "/en/groups.html"
 	},
 	{
-		"pageTitle": "Notice",
-		"relativePagePath": "/en/shortcodes/notice.html"
+		"pageTitle": "Parameter Groups",
+		"relativePagePath": "/en/groups/parameter.html"
 	},
 	{
-		"pageTitle": "Site param",
-		"relativePagePath": "/en/shortcodes/siteparam.html"
+		"pageTitle": "Option Groups",
+		"relativePagePath": "/en/groups/option.html"
 	},
 	{
-		"pageTitle": "Site URL",
-		"relativePagePath": "/en/shortcodes/siteurl.html"
-	},
-	{
-		"pageTitle": "Launch",
-		"relativePagePath": "/en/launch.html"
-	},
-	{
-		"pageTitle": "Metadata",
-		"relativePagePath": "/en/launch/metadata.html"
+		"pageTitle": "DBA tasks for RDS Oracle DB",
+		"relativePagePath": "/en/dba.html"
 	}]

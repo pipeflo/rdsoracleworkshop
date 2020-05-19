@@ -1,18 +1,173 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<sitemap>
-	   	<loc>es/sitemap.xml</loc>
-		
-	   	<lastmod>2020-05-15T09:56:22-05:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>en/sitemap.xml</loc>
-		
-	   	<lastmod>2020-05-15T09:56:18-05:00</lastmod>
-		
-	</sitemap>
-	
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-05-18T18:24:39-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/groups/parameter.html</loc>
+    <lastmod>2020-05-18T14:32:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/logs/export.html</loc>
+    <lastmod>2020-05-17T21:58:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/upgrade/minor.html</loc>
+    <lastmod>2020-05-17T21:00:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/backup/automated.html</loc>
+    <lastmod>2020-05-17T17:07:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/scaledb/compute.html</loc>
+    <lastmod>2020-05-17T14:12:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/createdb/deploy.html</loc>
+    <lastmod>2020-05-12T21:14:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/setup/event.html</loc>
+    <lastmod>2020-05-12T14:35:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/intro/database-compute.html</loc>
+    <lastmod>2020-05-08T10:00:23-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/intro.html</loc>
+    <lastmod>2020-05-08T09:59:55-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/groups/option.html</loc>
+    <lastmod>2020-05-18T15:54:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/logs/view.html</loc>
+    <lastmod>2020-05-17T22:54:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/backup/manual.html</loc>
+    <lastmod>2020-05-17T17:07:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/scaledb/storage.html</loc>
+    <lastmod>2020-05-17T14:52:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/createdb/connect.html</loc>
+    <lastmod>2020-05-12T21:15:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/setup.html</loc>
+    <lastmod>2020-05-12T14:36:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/intro/storage.html</loc>
+    <lastmod>2020-05-08T10:00:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/backup/snapshot.html</loc>
+    <lastmod>2020-05-17T17:07:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/scaledb/optimized.html</loc>
+    <lastmod>2020-05-17T15:21:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/createdb/multiaz.html</loc>
+    <lastmod>2020-05-15T09:56:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/createdb.html</loc>
+    <lastmod>2020-05-12T21:12:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/intro/licensing.html</loc>
+    <lastmod>2020-05-12T13:58:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/backup/pointintime.html</loc>
+    <lastmod>2020-05-17T19:25:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/scaledb.html</loc>
+    <lastmod>2020-05-17T14:05:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/backup.html</loc>
+    <lastmod>2020-05-17T16:36:16-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/setup/own/create.html</loc>
+    <lastmod>2020-05-12T20:23:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/setup/event/login.html</loc>
+    <lastmod>2020-05-12T19:35:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/setup/own.html</loc>
+    <lastmod>2020-05-12T14:35:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/upgrade.html</loc>
+    <lastmod>2020-05-17T21:00:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/logs.html</loc>
+    <lastmod>2020-05-17T21:54:51-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/groups.html</loc>
+    <lastmod>2020-05-18T14:12:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/dba.html</loc>
+    <lastmod>2020-05-18T18:24:39-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories.html</loc>
+  </url>
+  
+  <url>
+    <loc>/tags.html</loc>
+  </url>
+  
+</urlset>

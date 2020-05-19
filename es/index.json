@@ -53,4 +53,76 @@
 	{
 		"pageTitle": "Multiaz",
 		"relativePagePath": "/es/createdb/multiaz.html"
+	},
+	{
+		"pageTitle": "Escalar tu instancia de RDS",
+		"relativePagePath": "/es/scaledb.html"
+	},
+	{
+		"pageTitle": "Escalar Computo",
+		"relativePagePath": "/es/scaledb/compute.html"
+	},
+	{
+		"pageTitle": "Escalar Almacenamiento",
+		"relativePagePath": "/es/scaledb/storage.html"
+	},
+	{
+		"pageTitle": "Optimized",
+		"relativePagePath": "/es/scaledb/optimized.html"
+	},
+	{
+		"pageTitle": "Dba",
+		"relativePagePath": "/es/dba.html"
+	},
+	{
+		"pageTitle": "Backup and Restore",
+		"relativePagePath": "/es/backup.html"
+	},
+	{
+		"pageTitle": "Backup Automático",
+		"relativePagePath": "/es/backup/automated.html"
+	},
+	{
+		"pageTitle": "Restaura a partir de un Snapshot",
+		"relativePagePath": "/es/backup/snapshot.html"
+	},
+	{
+		"pageTitle": "Point in time Restore",
+		"relativePagePath": "/es/backup/pointintime.html"
+	},
+	{
+		"pageTitle": "Manual",
+		"relativePagePath": "/es/backup/manual.html"
+	},
+	{
+		"pageTitle": "Upgrade",
+		"relativePagePath": "/es/upgrade.html"
+	},
+	{
+		"pageTitle": "Minor",
+		"relativePagePath": "/es/upgrade/minor.html"
+	},
+	{
+		"pageTitle": "Logs",
+		"relativePagePath": "/es/logs.html"
+	},
+	{
+		"pageTitle": "Export RDS Oracle logs to CloudWatch",
+		"relativePagePath": "/es/logs/export.html"
+	},
+	{
+		"pageTitle": "View",
+		"relativePagePath": "/es/logs/view.html"
+	},
+	{
+		"pageTitle": "Parameter y Option Groups",
+		"relativePagePath": "/es/groups.html"
+	},
+	{
+		"pageTitle": "Parameter",
+		"relativePagePath": "/es/groups/parameter.html"
+	},
+	{
+		"pageTitle": "Option Groups",
+		"relativePagePath": "/es/groups/option.html"
 	}]

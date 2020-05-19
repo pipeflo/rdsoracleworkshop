@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="RDS for Oracle Workshop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="description" content="My AWS Workshop">
+<meta name="author" content="Jane Architect">
+
+  <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+<link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+
+  <title>RDS Oracle Upgrade :: RDS for Oracle Workshop</title>
+
+  
+  <link href="../css/nucleus.css" rel="stylesheet">
+  <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="../css/hybrid.css" rel="stylesheet">
+  <link href="../css/featherlight.min.css" rel="stylesheet">
+  <link href="../css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="../css/auto-complete.css" rel="stylesheet">
+  <link href="../css/atom-one-dark-reasonable.css" rel="stylesheet">
+  <link href="../css/theme.css" rel="stylesheet">
+  <link href="../css/hugo-theme.css" rel="stylesheet">
+  
+  <link href="../css/theme-aws.css" rel="stylesheet">
+  
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+
+  <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+      :not(pre) > code + span.copy-to-clipboard {
+          display: none;
+      }
+    
+  </style>
+  
+</head>
+
+<body class="" data-url="/upgrade/minor.html">
+  <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div>
+    <a href="../" title="Go home">
+        <img style="vertical-align:middle" src="../images/logo.png" height="70px" />
+    </a>
+</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js"></script>
+<script type="text/javascript" src="../js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="../js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/intro.html" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro.html">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro/database-compute.html" title="Database Compute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro/database-compute.html">
+          Database Compute
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro/storage.html" title="Database Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro/storage.html">
+          Database Storage
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/intro/licensing.html" title="Licensing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../intro/licensing.html">
+          Licensing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/setup.html" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup.html">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/event.html" title="…attending an AWS hosted event" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/event.html">
+          …attending an AWS hosted event
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/event/login.html" title="Event Engine" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/event/login.html">
+          Event Engine
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/own.html" title="...running the workshop on your own" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/own.html">
+          ...running the workshop on your own
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/setup/own/create.html" title="Create an AWS Account" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../setup/own/create.html">
+          Create an AWS Account
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb.html" title="Create an RDS Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb.html">
+          Create an RDS Instance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb/deploy.html" title="Create an RDS Oracle Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb/deploy.html">
+          Create an RDS Oracle Instance
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb/connect.html" title="Connect to your Oracle Database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb/connect.html">
+          Connect to your Oracle Database
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/createdb/multiaz.html" title="Automatic Failover with Multi-AZ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../createdb/multiaz.html">
+          Automatic Failover with Multi-AZ
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb.html" title="Scale your RDS Instance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb.html">
+          Scale your RDS Instance
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb/compute.html" title="Scale Compute" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb/compute.html">
+          Scale Compute
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb/storage.html" title="Scale Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb/storage.html">
+          Scale Storage
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/scaledb/optimized.html" title="Configure Optimized CPU Feature" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../scaledb/optimized.html">
+          Configure Optimized CPU Feature
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/backup.html" title="Backup and Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup.html">
+          Backup and Restore
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/automated.html" title="Automated Backup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/automated.html">
+          Automated Backup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/manual.html" title="Manual Backups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/manual.html">
+          Manual Backups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/snapshot.html" title="Snapshot Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/snapshot.html">
+          Snapshot Restore
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/backup/pointintime.html" title="Point in time Restore" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../backup/pointintime.html">
+          Point in time Restore
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/upgrade.html" title="Database Upgrades" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../upgrade.html">
+          Database Upgrades
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/upgrade/minor.html" title="RDS Oracle Upgrade" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="../upgrade/minor.html">
+          RDS Oracle Upgrade
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/logs.html" title="Logs and Performance Insights" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../logs.html">
+          Logs and Performance Insights
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/logs/export.html" title="Export RDS Oracle logs to CloudWatch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../logs/export.html">
+          Export RDS Oracle logs to CloudWatch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/logs/view.html" title="View RDS Oracle logs on CloudWatch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../logs/view.html">
+          View RDS Oracle logs on CloudWatch
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/groups.html" title="Parameter and Option Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../groups.html">
+          Parameter and Option Groups
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/groups/parameter.html" title="Parameter Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../groups/parameter.html">
+          Parameter Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/groups/option.html" title="Option Groups" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../groups/option.html">
+          Option Groups
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/dba.html" title="DBA tasks for RDS Oracle DB" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../dba.html">
+          DBA tasks for RDS Oracle DB
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <left>
+
+    <h5 class="copyright">&copy; 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+  <section id="body">
+    <div id="overlay"></div>
+    <div class="padding highlightable">
+      
+      <div>
+        <div id="top-bar">
+          
+          
+          
+          
+          <div id="top-github-link">
+            <a class="github-link" title='Edit this page' href="https://code.amazon.com/packages/Aws-workshop-template/blobs/master/--/workshop/content/upgrade/minor/_index.en.md"
+              target="blank">
+              <i class="fas fa-code-branch"></i>
+              <span id="top-github-link-text">Edit this page</span>
+            </a>
+          </div>
+          
+          
+          
+          <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+            
+            <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+            
+            <span class="links">
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href='../'>RDS Oracle Workshop</a> > <a href='../upgrade.html'>Database Upgrades</a> > RDS Oracle Upgrade
+          
+          
+          
+          
+          
+          
+            </span>
+          </div>
+          
+          <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+          
+        </div>
+      </div>
+      
+
+      
+        <div id="body-inner">
+          <h1>RDS Oracle Upgrade</h1>
+          
+          
+
+
+
+	<p>Since Oracle 12c version 12.2.0.1, Oracle changed the way it releases Oracle Database updates. Instead of Patch Set Updates (PSUs), Oracle supplies Release Updates (RUs) and Release Updates Revisions (RURs).</p>
+<p>RUs contain optimizer changes, feature additions, and security fixes.
+RURs only contain security fixes for the two preceding quarterly patch cycles. With this new system, you have more control over the features that you install with each update.</p>
+<p>Oracle versions naming conventions account for both RU and RUR updates. For example, the first Amazon RDS for Oracle version available is 12.2.0.1.ru-2018-10.rur-2018-10.r1. In this example, 12.2 is the major version, and 0.1 is the minor version. The revision version has the following parts:
+ru-2018-10 – the October RU
+rur-2018-10 – the October RUR for the October RU
+r1 – Internal Amazon RDS revision, which lets Amazon RDS differentiate between emergency patches of pre-existing RU/RURs</p>
+<p>To upgrade your RDS Instance follow the next steps:</p>
+<ol>
+<li>
+<p>Verify the current Release Update of your Database Instance, connect to the RDS Oracle Database instance from SQL*PLUS and run the following command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">set serveroutput on;
+exec DBMS_QOPATCH.GET_SQLPATCH_STATUS;
+</code></pre></div><p><img src="../images/upgrade/sqlpatch-status.png?width=80pc" alt="sql-patch-status"></p>
+</li>
+<li>
+<p>Now, to upgrade your RDS Oracle Instance, find the newly created RDS Oracle instance under the <strong>Databases</strong> list and click on the DB Instance name, in the Details page, click on the <strong>Modify</strong> button.
+<img src="../images/scale/compute/modify.png?width=80pc" alt="modify"></p>
+</li>
+<li>
+<p>On the &ldquo;Modify DB Instance&rdquo; page, click on the <strong>DB engine version</strong> dropdown and select the option <strong>Oracle 19.0.0.0.ru-2020-04.rur-2020-04.r1</strong>, leave all other fields as they are and then click <strong>Continue</strong> at the bottom of the page.
+<img src="../images/upgrade/engine-version.png?width=80pc" alt="engine-version">
+<img src="../images/multiaz/continue.png?width=80pc" alt="continue"></p>
+</li>
+<li>
+<p>Before excecuting the upgrade, please take a look to the <strong>Summary of modifications</strong>, where you can see that in this case, you are going to upgrade from the Release Update from July 2019 (ru-2019-07) and the Release Update Revision from the same date (rur-2019-07) to the Release Update and Release Update Revision of April 2020.</p>
+<p>Now select <strong>Apply Immediately</strong> on the &ldquo;Scheduling of modifications&rdquo; section and then click <strong>Modify DB Instance</strong>, this will excecute the modifications as soon as possible and will not wait unti the next configured maintenance window.
+<img src="../images/upgrade/summary-modifications.png?width=80pc" alt="summary-modifications"></p>
+</li>
+<li>
+<p>Please wait while the Oracle Instance is upgraded, you can see the status on the databases list.
+<img src="../images/upgrade/upgrading.png?width=80pc" alt="upgrading"></p>
+</li>
+<li>
+<p>Once your Instance status changes to available, you can check the new Oracle version and Updates installed by connecting againg using SQL*Plus and running the following queries:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">set serveroutput on;
+exec DBMS_QOPATCH.GET_SQLPATCH_STATUS;
+</code></pre></div><p>When you connect to the Database, you can see that the Version changed from <strong>19.4.0.0.0</strong> to <strong>19.7.0.0.0</strong>
+<img src="../images/upgrade/new-version.png?width=80pc" alt="new-version">
+You can also see from the query result, the list of patches that were installed.
+<img src="../images/upgrade/patches-list.png?width=80pc" alt="patches-list"></p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Congratulations!! You have learned how to upgrade your Oracle Instance, please review the following recomendations at the moment of making a version upgrade:</p>
+<ol>
+<li>Review the Oracle upgrade documentation for the new version of the database engine to see if there are compatibility issues that might affect your database or applications. For more information, see <a href="https://docs.oracle.com/database/121/UPGRD/toc.htm" target="_blank">Database Upgrade Guide</a> in the Oracle documentation.</li>
+<li>If your DB instance uses a custom option group, create a new option group compatible with the new version. For more information, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Oracle.html#USER_UpgradeDBInstance.Oracle.OGPG.OG" target="_blank">Option Group Considerations</a>.</li>
+<li>If your DB instance uses a custom parameter group, create a new parameter group compatible with the new version. For more information, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Oracle.html#USER_UpgradeDBInstance.Oracle.OGPG.PG" target="_blank">Parameter Group Considerations</a>.</li>
+<li>Create a DB snapshot of the DB instance to be upgraded. For more information, see the Backup chapter of this workshop.</li>
+<li>Restore the DB snapshot to create a new test DB instance. For more information, see the Snapshot Restore section from the Backup Chapter of this workshop.</li>
+<li>Modify this new test DB instance to upgrade it to the new version by using AWS console, AWS CLI or RDS API</li>
+<li>Perform functional and performance testing
+<ul>
+<li>Run as many of your quality assurance tests against the upgraded DB instance as needed to ensure that your database and application work correctly with the new version.  Direct test versions of your applications to the upgraded DB instance. Verify that the applications work correctly with the new version.</li>
+<li>Test all stored procedures, functions, and triggers.</li>
+</ul>
+</li>
+<li>If all tests pass, then perform the upgrade on your production DB instance. We recommend that you don&rsquo;t allow write operations to the DB instance until you confirm that everything is working correctly.</li>
+</ol>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../upgrade.html" title="Database Upgrades"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../logs.html" title="Logs and Performance Insights" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/perfect-scrollbar.min.js"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/featherlight.min.js"></script>
+    <script src="../js/html5shiv-printshiv.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js"></script>
+    <script src="../js/learn.js"></script>
+    <script src="../js/hugo-learn.js"></script>
+
+    <link href="../mermaid/mermaid.css" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <div id = 'kinesisStreamName' title = ""/></div>
+<div id = 'cognitoPoolId' title = ""/></div>
+<div id = 'awsRegion' title = ""/></div>
+<div id = 'contentId' title = ""/></div>
+<div id = 'language' title = "en"/></div>
+<div id = 'versions' title = ""/></div>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+<script src="../js/kinesis.js"></script>
+  </body>
+</html>

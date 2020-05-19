@@ -4,7 +4,7 @@
   
   <url>
     <loc>/es/</loc>
-    <lastmod>2020-05-15T09:56:22-05:00</lastmod>
+    <lastmod>2020-05-18T18:24:35-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +14,81 @@
                 rel="alternate"
                 hreflang="es"
                 href="/es/"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/groups/parameter.html</loc>
+    <lastmod>2020-05-18T14:32:18-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/groups/parameter.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/groups/parameter.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/logs/export.html</loc>
+    <lastmod>2020-05-17T21:58:58-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/logs/export.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/logs/export.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/upgrade/minor.html</loc>
+    <lastmod>2020-05-17T21:00:30-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/upgrade/minor.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/upgrade/minor.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/backup/automated.html</loc>
+    <lastmod>2020-05-17T17:07:14-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/backup/automated.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/backup/automated.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/scaledb/compute.html</loc>
+    <lastmod>2020-05-17T14:12:31-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/scaledb/compute.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/scaledb/compute.html"
                 />
   </url>
   
@@ -78,6 +153,51 @@
   </url>
   
   <url>
+    <loc>/es/groups/option.html</loc>
+    <lastmod>2020-05-18T15:54:15-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/groups/option.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/groups/option.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/logs/view.html</loc>
+    <lastmod>2020-05-17T22:54:24-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/logs/view.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/logs/view.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/scaledb/storage.html</loc>
+    <lastmod>2020-05-17T14:53:01-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/scaledb/storage.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/scaledb/storage.html"
+                />
+  </url>
+  
+  <url>
     <loc>/es/createdb/connect.html</loc>
     <lastmod>2020-05-12T21:15:07-05:00</lastmod>
     <xhtml:link
@@ -119,6 +239,36 @@
                 rel="alternate"
                 hreflang="es"
                 href="/es/intro/storage.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/backup/snapshot.html</loc>
+    <lastmod>2020-05-17T17:07:50-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/backup/snapshot.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/backup/snapshot.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/scaledb/optimized.html</loc>
+    <lastmod>2020-05-17T15:21:38-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/scaledb/optimized.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/scaledb/optimized.html"
                 />
   </url>
   
@@ -168,6 +318,81 @@
   </url>
   
   <url>
+    <loc>/es/backup/pointintime.html</loc>
+    <lastmod>2020-05-17T19:25:05-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/backup/pointintime.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/backup/pointintime.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/scaledb.html</loc>
+    <lastmod>2020-05-17T14:05:21-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/scaledb.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/scaledb.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/dba.html</loc>
+    <lastmod>2020-05-18T18:24:35-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/dba.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/dba.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/backup/manual.html</loc>
+    <lastmod>2020-05-17T17:07:27-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/backup/manual.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/backup/manual.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/backup.html</loc>
+    <lastmod>2020-05-17T16:36:11-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/backup.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/backup.html"
+                />
+  </url>
+  
+  <url>
     <loc>/es/setup/own/create.html</loc>
     <lastmod>2020-05-12T20:23:33-05:00</lastmod>
     <xhtml:link
@@ -209,6 +434,51 @@
                 rel="alternate"
                 hreflang="es"
                 href="/es/setup/own.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/upgrade.html</loc>
+    <lastmod>2020-05-17T21:00:53-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/upgrade.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/upgrade.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/logs.html</loc>
+    <lastmod>2020-05-17T21:54:47-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/logs.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/logs.html"
+                />
+  </url>
+  
+  <url>
+    <loc>/es/groups.html</loc>
+    <lastmod>2020-05-18T14:12:47-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/groups.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/groups.html"
                 />
   </url>
   

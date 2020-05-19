@@ -1,0 +1,128 @@
+[
+	{	"pageTitle": "Index",
+		"relativePagePath": "/en/"
+	},
+	{
+		"pageTitle": "Introduction",
+		"relativePagePath": "/intro.html"
+	},
+	{
+		"pageTitle": "Database Compute",
+		"relativePagePath": "/intro/database-compute.html"
+	},
+	{
+		"pageTitle": "Database Storage",
+		"relativePagePath": "/intro/storage.html"
+	},
+	{
+		"pageTitle": "Licensing",
+		"relativePagePath": "/intro/licensing.html"
+	},
+	{
+		"pageTitle": "Getting Started",
+		"relativePagePath": "/setup.html"
+	},
+	{
+		"pageTitle": "…attending an AWS hosted event",
+		"relativePagePath": "/setup/event.html"
+	},
+	{
+		"pageTitle": "Event Engine",
+		"relativePagePath": "/setup/event/login.html"
+	},
+	{
+		"pageTitle": "...running the workshop on your own",
+		"relativePagePath": "/setup/own.html"
+	},
+	{
+		"pageTitle": "Create an AWS Account",
+		"relativePagePath": "/setup/own/create.html"
+	},
+	{
+		"pageTitle": "Create an RDS Instance",
+		"relativePagePath": "/createdb.html"
+	},
+	{
+		"pageTitle": "Create an RDS Oracle Instance",
+		"relativePagePath": "/createdb/deploy.html"
+	},
+	{
+		"pageTitle": "Connect to your Oracle Database",
+		"relativePagePath": "/createdb/connect.html"
+	},
+	{
+		"pageTitle": "Automatic Failover with Multi-AZ",
+		"relativePagePath": "/createdb/multiaz.html"
+	},
+	{
+		"pageTitle": "Scale your RDS Instance",
+		"relativePagePath": "/scaledb.html"
+	},
+	{
+		"pageTitle": "Scale Compute",
+		"relativePagePath": "/scaledb/compute.html"
+	},
+	{
+		"pageTitle": "Scale Storage",
+		"relativePagePath": "/scaledb/storage.html"
+	},
+	{
+		"pageTitle": "Configure Optimized CPU Feature",
+		"relativePagePath": "/scaledb/optimized.html"
+	},
+	{
+		"pageTitle": "Backup and Restore",
+		"relativePagePath": "/backup.html"
+	},
+	{
+		"pageTitle": "Automated Backup",
+		"relativePagePath": "/backup/automated.html"
+	},
+	{
+		"pageTitle": "Manual Backups",
+		"relativePagePath": "/backup/manual.html"
+	},
+	{
+		"pageTitle": "Snapshot Restore",
+		"relativePagePath": "/backup/snapshot.html"
+	},
+	{
+		"pageTitle": "Point in time Restore",
+		"relativePagePath": "/backup/pointintime.html"
+	},
+	{
+		"pageTitle": "Database Upgrades",
+		"relativePagePath": "/upgrade.html"
+	},
+	{
+		"pageTitle": "RDS Oracle Upgrade",
+		"relativePagePath": "/upgrade/minor.html"
+	},
+	{
+		"pageTitle": "Logs and Performance Insights",
+		"relativePagePath": "/logs.html"
+	},
+	{
+		"pageTitle": "Export RDS Oracle logs to CloudWatch",
+		"relativePagePath": "/logs/export.html"
+	},
+	{
+		"pageTitle": "View RDS Oracle logs on CloudWatch",
+		"relativePagePath": "/logs/view.html"
+	},
+	{
+		"pageTitle": "Parameter and Option Groups",
+		"relativePagePath": "/groups.html"
+	},
+	{
+		"pageTitle": "Parameter Groups",
+		"relativePagePath": "/groups/parameter.html"
+	},
+	{
+		"pageTitle": "Option Groups",
+		"relativePagePath": "/groups/option.html"
+	},
+	{
+		"pageTitle": "DBA tasks for RDS Oracle DB",
+		"relativePagePath": "/dba.html"
+	}]

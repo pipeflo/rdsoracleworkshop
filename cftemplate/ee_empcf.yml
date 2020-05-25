@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: This template creates a VPC, Subnets, and an EC2 dev instance
+Description: This template creates the Required Windows EC2 Instances for the EMP Technical Training
 
 Metadata:
   AWS::CloudFormation::Interface:
